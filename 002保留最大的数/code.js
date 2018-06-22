@@ -2,7 +2,9 @@ var assert = require('assert')
 let Bar = {
   main(){
     // this.deal(456934145,4)
+    console.time('用时')
     this.deal2(456934145,4)
+    console.timeEnd('用时')
   },
   deal (number, cnt) { //连续去除
     let len = String(number).length
